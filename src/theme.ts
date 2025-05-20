@@ -14,6 +14,7 @@ const milanesiColors: MantineColorsTuple = [
 ];
 
 export const milanesiTheme = createTheme({
+  primaryColor: 'milanesiColors',
   colors: {
     milanesiColors,
   }

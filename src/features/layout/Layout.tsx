@@ -1,15 +1,17 @@
 import { AppShell, Container, Group, Image } from "@mantine/core";
-import HeroImageRight from "./hero/HeroImage";
+import HeroImageRight from "../hero/HeroImage";
+import InsurancesSection from "../insurances/InsurancesSection";
+import { insuranceTypes } from "../insurances/insurancesList";
 
 export default function Layout() {
   return (
     <AppShell
-      header={{ height: 80 }}
+      // header={{ height: 100 }}
     >
       <AppShell.Header>
         <Container size={'xl'}>
         <Group justify="space-between">
-          <Image h={80} w={100} src={'assets/logo.jpeg'} />
+          <Image w={100} src={'assets/logo.jpeg'} />
           <Group>
             <a>Inicio</a>
             <a>Seguros</a>
@@ -21,6 +23,11 @@ export default function Layout() {
       </AppShell.Header>
       <AppShell.Main>
         <HeroImageRight />
+        {
+          insuranceTypes.map((item, idx) => (
+            <InsurancesSection key={item.id} imagePosition={idx%2 === 0 ? 'right' : 'left'} insurance={item} />
+          ))
+        }
       </AppShell.Main>
     </AppShell>
   )
