@@ -19,8 +19,9 @@ export default function HeroImageRight() {
             </Text>
 
             <Button
-              variant="gradient"
-              gradient={{ from: 'blue', to: 'yellow' }}
+              // variant="gradient"
+              // gradient={{ from: 'blue', to: 'yellow' }}
+              color='var(--mantine-primary-color-8)'
               size="xl"
               className={classes.control}
               mt={40}

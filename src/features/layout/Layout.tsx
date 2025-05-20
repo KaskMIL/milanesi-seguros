@@ -1,4 +1,4 @@
-import { AppShell, Container, Group, Image } from "@mantine/core";
+import { AppShell, Container, Group, Image, Stack, Text } from "@mantine/core";
 import HeroImageRight from "../hero/HeroImage";
 import InsurancesSection from "../insurances/InsurancesSection";
 import { insuranceTypes } from "../insurances/insurancesList";
@@ -11,7 +11,13 @@ export default function Layout() {
       <AppShell.Header>
         <Container size={'xl'}>
         <Group justify="space-between">
+          <Group>
           <Image w={100} src={'assets/logo.jpeg'} />
+          <Stack align="center" gap={0}>
+            <Text mb={-20} ta={'center'} fw={600} fz={'h1'} c={'var(--mantine-primary-color-9)'}>MILANESI</Text>
+            <Text ta={'center'} fw={200} fz={'h2'} c={'var(--mantine-primary-color-9)'}>Seguros</Text>
+          </Stack>
+          </Group>
           <Group>
             <a>Inicio</a>
             <a>Seguros</a>
