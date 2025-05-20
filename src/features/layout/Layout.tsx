@@ -1,4 +1,5 @@
-import { AppShell, Container, Group, Image, Title } from "@mantine/core";
+import { AppShell, Container, Group, Image } from "@mantine/core";
+import HeroImageRight from "./hero/HeroImage";
 
 export default function Layout() {
   return (
@@ -8,7 +9,7 @@ export default function Layout() {
       <AppShell.Header>
         <Container size={'xl'}>
         <Group justify="space-between">
-          <Image h={80} w={100} src={'https://placehold.co/200x200'} />
+          <Image h={80} w={100} src={'assets/logo.jpeg'} />
           <Group>
             <a>Inicio</a>
             <a>Seguros</a>
@@ -19,7 +20,7 @@ export default function Layout() {
         </Container>
       </AppShell.Header>
       <AppShell.Main>
-        <Title>Hello World!</Title>
+        <HeroImageRight />
       </AppShell.Main>
     </AppShell>
   )
