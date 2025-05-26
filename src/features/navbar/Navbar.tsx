@@ -37,7 +37,7 @@ export default function Navbar() {
       <Container size={'xl'} className={classes.inner}>
         {/* <MantineLogo size={28} /> */}
         <Group>
-          <Image w={100} src={'assets/logo.jpeg'} />
+          <Image w={100} src={'/assets/logo.jpeg'} />
           <Stack align='center' gap={0}>
             <Text
               mb={-20}

@@ -15,6 +15,7 @@ export default function Layout() {
         <Navbar />
       </AppShell.Header>
       <AppShell.Main>
+        <div style={{ position: 'relative' }}>
         <HeroImageRight />
         <section id="seguros">
           {
@@ -26,6 +27,7 @@ export default function Layout() {
         <ServiceSlider />
         <Contact />
         <Footer />
+        </div>
       </AppShell.Main>
     </AppShell>
   )

@@ -4,7 +4,7 @@ export const insuranceTypes = [
     title: 'Protegé tu auto',
     description:
       'Cobertura completa contra accidentes, robos e imprevistos. Asistencia vial 24/7 y auto sustituto sin costos ocultos.',
-    image: 'assets/compressed/car-secure-comp.jpg',
+    image: '/assets/compressed/car-secure-comp.jpg',
     items: [
       'Asistencia vial 24/7',
       'Auto sustituto en caso de siniestro',
@@ -17,7 +17,7 @@ export const insuranceTypes = [
     title: 'Tranquilidad en tu hogar',
     description:
       'Protege tu vivienda ante incendios, robos y daños por agua. Asistencia 24/7 y asesoría personalizada en siniestros.',
-    image: 'assets/compressed/home-secure-comp1.jpg',
+    image: '/assets/compressed/home-secure-comp1.jpg',
     items: [
       'Cobertura por incendio y explosión',
       'Daños por agua y filtraciones',
@@ -30,7 +30,7 @@ export const insuranceTypes = [
     title: 'Seguro de consorcio',
     description:
       'Cubre daños en áreas comunes: incendio, filtraciones y responsabilidad civil. Gestión ágil de reclamos y respaldo legal.',
-    image: 'assets/compressed/apartments.jpeg',
+    image: '/assets/compressed/apartments.jpeg',
     items: [
       'Daños en áreas comunes',
       'Filtraciones y goteras',
@@ -43,7 +43,7 @@ export const insuranceTypes = [
     title: 'Protección para tu negocio',
     description:
       'Cobertura contra robos, daños y responsabilidad civil. Asistencia legal y monitoreo preventivo para mantener tu empresa segura.',
-    image: 'assets/compressed/shop-owner-3.jpeg',
+    image: '/assets/compressed/shop-owner-3.jpeg',
     items: [
       'Robo y hurto de mercadería',
       'Daños por incendio y daños eléctricos',
@@ -56,7 +56,7 @@ export const insuranceTypes = [
     title: 'Cuidado para tu mascota',
     description:
       'Cobertura veterinaria, accidentes y responsabilidad civil. Red de clínicas y atención 24/7 para salud de tu compañero.',
-    image: 'assets/compressed/pet-3.jpeg',
+    image: '/assets/compressed/pet-3.jpeg',
     items: [
       'Consultas y cirugías veterinarias',
       'Cobertura por accidente',
