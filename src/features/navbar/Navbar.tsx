@@ -4,10 +4,10 @@ import { useDisclosure } from '@mantine/hooks';
 import classes from './HeaderSimple.module.css';
 
 const links = [
-  { link: '#Inicio', label: 'Inicio' },
-  { link: '#Seguros', label: 'Seguros' },
-  { link: '#Nosotros', label: 'Nosotros' },
-  { link: '#Contacto', label: 'Contacto' },
+  { link: '#inicio', label: 'Inicio' },
+  { link: '#seguros', label: 'Seguros' },
+  { link: '#nosotros', label: 'Nosotros' },
+  { link: '#contacto', label: 'Contacto' },
 ];
 
 export default function Navbar() {
@@ -20,8 +20,8 @@ export default function Navbar() {
       href={link.link}
       className={classes.link}
       data-active={active === link.link || undefined}
-      onClick={(event) => {
-        event.preventDefault();
+      onClick={() => {
+        // event.preventDefault();
         setActive(link.link);
         if (opened) {
           toggle();

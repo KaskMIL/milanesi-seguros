@@ -20,6 +20,7 @@ export function ServiceSlider() {
         overflow: "hidden",
         whiteSpace: "nowrap",
       }}
+      id="nosotros"
     >
       <Box
         style={{

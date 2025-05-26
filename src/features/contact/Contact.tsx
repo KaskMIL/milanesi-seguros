@@ -1,4 +1,4 @@
-import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
+import { IconBrandInstagram } from '@tabler/icons-react';
 import {
   ActionIcon,
   Box,
@@ -27,7 +27,7 @@ export default function Contact() {
   ));
 
   return (
-    <Box className={classes.wrapper}>
+    <Box className={classes.wrapper} id='contacto'>
     <Container size="lg">
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
         <div>

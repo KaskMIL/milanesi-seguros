@@ -5,6 +5,7 @@ import { insuranceTypes } from "../insurances/insurancesList";
 import Navbar from "../navbar/Navbar";
 import { ServiceSlider } from "../slider/Slider";
 import Contact from "../contact/Contact";
+import Footer from "../footer/Footer";
 
 export default function Layout() {
   return (
@@ -15,13 +16,16 @@ export default function Layout() {
       </AppShell.Header>
       <AppShell.Main>
         <HeroImageRight />
-        {
-          insuranceTypes.map((item, idx) => (
-            <InsurancesSection key={item.id} imagePosition={idx%2 === 0 ? 'right' : 'left'} insurance={item} />
-          ))
-        }
+        <section id="seguros">
+          {
+            insuranceTypes.map((item, idx) => (
+              <InsurancesSection key={item.id} imagePosition={idx%2 === 0 ? 'right' : 'left'} insurance={item} />
+            ))
+          }
+        </section>
         <ServiceSlider />
         <Contact />
+        <Footer />
       </AppShell.Main>
     </AppShell>
   )

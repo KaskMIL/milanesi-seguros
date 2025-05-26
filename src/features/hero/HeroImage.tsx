@@ -3,7 +3,7 @@ import classes from './HeroImageRight.module.css';
 
 export default function HeroImageRight() {
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id='inicio'>
       <Container size="lg">
         <div className={classes.inner}>
           <div className={classes.content}>
