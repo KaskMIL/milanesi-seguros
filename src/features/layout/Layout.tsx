@@ -1,7 +1,8 @@
-import { AppShell, Container, Group, Image, Stack, Text } from "@mantine/core";
+import { AppShell } from "@mantine/core";
 import HeroImageRight from "../hero/HeroImage";
 import InsurancesSection from "../insurances/InsurancesSection";
 import { insuranceTypes } from "../insurances/insurancesList";
+import Navbar from "../navbar/Navbar";
 
 export default function Layout() {
   return (
@@ -9,7 +10,7 @@ export default function Layout() {
       // header={{ height: 100 }}
     >
       <AppShell.Header>
-        <Container size={'xl'}>
+        {/* <Container size={'xl'}>
         <Group justify="space-between">
           <Group>
           <Image w={100} src={'assets/logo.jpeg'} />
@@ -25,7 +26,8 @@ export default function Layout() {
             <a>Contacto</a>
           </Group>
         </Group>
-        </Container>
+        </Container> */}
+        <Navbar />
       </AppShell.Header>
       <AppShell.Main>
         <HeroImageRight />
