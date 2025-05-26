@@ -4,6 +4,7 @@ import InsurancesSection from "../insurances/InsurancesSection";
 import { insuranceTypes } from "../insurances/insurancesList";
 import Navbar from "../navbar/Navbar";
 import { ServiceSlider } from "../slider/Slider";
+import Contact from "../contact/Contact";
 
 export default function Layout() {
   return (
@@ -20,6 +21,7 @@ export default function Layout() {
           ))
         }
         <ServiceSlider />
+        <Contact />
       </AppShell.Main>
     </AppShell>
   )
